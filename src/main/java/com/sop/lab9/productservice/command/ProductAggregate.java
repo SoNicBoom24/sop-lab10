@@ -1,7 +1,6 @@
 package com.sop.lab9.productservice.command;
 
-import com.fasterxml.jackson.databind.util.BeanUtil;
-import com.sop.lab9.productservice.event.ProductCreatedEvent;
+import com.sop.lab9.productservice.core.event.ProductCreatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
@@ -10,7 +9,6 @@ import org.axonframework.spring.stereotype.Aggregate;
 import org.springframework.beans.BeanUtils;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 
 @Aggregate
 public class ProductAggregate {
